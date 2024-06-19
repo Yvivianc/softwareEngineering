@@ -7,7 +7,6 @@ from gensim.models import KeyedVectors
 
 
 #将文本格式的词向量文件转换为二进制格式的文件，并保存在指定路径。
-#将词向量文件保存为二进制文件
 #trans_bin 函数接受两个参数：path1 是待转换的文本格式的词向量文件路径，path2 是转换后的二进制格式的词向量文件路径。
 def trans_bin(path1, path2):
     #使用 KeyedVectors.load_word2vec_format 方法加载文本格式的词向量文件，该文件包含了预训练的词向量。参数 binary=False 表示加载的是文本格式的文件。
